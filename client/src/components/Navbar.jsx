@@ -52,8 +52,8 @@ const Navbar = () => {
         <HStack>
           <Link as={ReactLink} to="/">
             <Flex alignItems="center">
-            <Icon as={GiTechnoHeart} h={7} w={7} color="orange.400" />
-              <Text fontSize='3xl' fontWeight="600">DarkTech</Text>
+            <Icon as={GiTechnoHeart} h={6} w={6}  color="orange.400" />
+              <Text fontSize='xl' fontWeight="extrabold" fontFamily={'Cinzel'}>darktech</Text>
             </Flex>
           </Link>
           <HStack 

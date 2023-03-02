@@ -40,8 +40,8 @@ export const products = [
     category: 'Electronics',
     price: 399.99,
     countInStock: 11,
-    rating: 5,
-    numReviews: 0,
+    rating: 2,
+    numReviews: 4,
     isNew: false,
 
     reviews: [],
@@ -57,7 +57,7 @@ export const products = [
     category: 'Electronics',
     price: 299.99,
     rating: 5,
-    numReviews: 0,
+    numReviews: 3,
     isNew: false,
 
     reviews: [],
@@ -73,7 +73,7 @@ export const products = [
     category: 'Electronics',
     price: 299.99,
     rating: 4,
-    numReviews: 1,
+    numReviews: 2,
     isNew: false,
 
     reviews: [],
@@ -88,8 +88,8 @@ export const products = [
     brand: 'Amazon',
     category: 'Electronics',
     price: 699.99,
-    rating: 5,
-    numReviews: 0,
+    rating: 4,
+    numReviews: 3,
     isNew: false,
     stock: 0,
   },
@@ -101,8 +101,8 @@ export const products = [
     category: 'Electronics',
     description:
       'Essential features to help you stay connected, active, healthy and safe. Perfect for kids and older adults using Family Setup',
-    rating: 0,
-    numReviews: 0,
+    rating: 1,
+    numReviews: 2,
     price: 699.99,
     stock: 5,
     isNew: true,
@@ -117,7 +117,7 @@ export const products = [
     description:
       'Get a professional podcast sound with audio interfaces, hard disk recorders, or direct to computers and mobile devices with the Shure MV7 Podcasting Microphone (Black). This is a professional-quality, broadcast-style dynamic microphone, one that can has both a conventional XLR connection and a USB port. It also supports a 3.5mm headphone output for direct monitoring.',
     rating: 0,
-    numReviews: 0,
+    numReviews: 3,
     price: 449,
     stock: 2,
     isNew: true,
@@ -131,7 +131,7 @@ export const products = [
     category: 'Electronics',
     description:
       "Blazing 5G. Powerfully connected. It's time to enter into the next chapter. Seriously-fast 5G connection takes your everyday mobile experiences and vastly enhances them with next-level speed. Feel truly connected with seamless streaming, instant sharing and the power to transfer your thoughts to action in a blink.",
-    rating: 5,
+    rating: 2,
     numReviews: 1,
     price: 899.99,
     stock: 49,
