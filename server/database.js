@@ -1,13 +1,14 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const connectToDatabase = async () => {
   try {
-    mongoose.set("strictQuery", false);
+    mongoose.set('strictQuery', false);
     const connect = await mongoose.connect(process.env.MONGO_URI, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
-    console.log(`SUCCESSFULLY!MongoDB Connected: ${connect.connection.host}`);
+
+    console.log(`MongoDB Connected: ${connect.connection.host}`);
   } catch (error) {
     console.log(`Error: ${error.message}`);
   }
