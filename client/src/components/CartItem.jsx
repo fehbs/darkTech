@@ -1,6 +1,6 @@
 import { CloseButton, Flex, Select, useColorModeValue as mode, Stack, Image, Box, Text } from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
-import { addCartItem } from '../redux/actions/cartActions';
+import { addCartItem, removeCartItem } from '../redux/actions/cartActions';
 
 const CartItem = ({ cartItem }) => {
   const { name, image, price, stock, qty, id } = cartItem;
@@ -36,7 +36,7 @@ const CartItem = ({ cartItem }) => {
           ))}
         </Select>
         <Text fontWeight='bold'>${price}</Text>
-        <CloseButton onClick={() => dispatch((id))} />
+        <CloseButton onClick={() => dispatch(removeCartItem(id))} />
       </Flex>
     </Flex>
   );
