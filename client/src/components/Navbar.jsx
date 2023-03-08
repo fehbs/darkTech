@@ -52,25 +52,26 @@ const Navbar = () => {
           onClick={isOpen ? onClose : onOpen}
         />
         <HStack>
-          <Link as={ReactLink} to="/"
-            style={{textDecoration: 'none'}}
+          <Link
+            as={ReactLink}
+            to="/"
+            style={{ textDecoration: "none" }}
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >
             <Flex alignItems="center">
-            <Icon 
-            as={GiTechnoHeart} 
-            h={6} 
-            w={6}  
-            color={isHovering ? 'gray.200' : 'orange.400' }
-            />
-              <Text fontSize='xl' fontWeight="extrabold" fontFamily={'Cinzel'}>darktech</Text>
+              <Icon
+                as={GiTechnoHeart}
+                h={6}
+                w={6}
+                color={isHovering ? "gray.200" : "orange.400"}
+              />
+              <Text fontSize="xl" fontWeight="extrabold" fontFamily={"Cinzel"}>
+                dark tech
+              </Text>
             </Flex>
           </Link>
-          <HStack 
-          as='nav' 
-          spacing={4} 
-          display={{ base: 'none', md: 'flex' }}>
+          <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
             {links.map((link) => (
               <NavLink key={link.linkName} path={link.path}>
                 {link.linkName}
@@ -100,7 +101,7 @@ const Navbar = () => {
             as={ReactLink}
             to="/registration"
             m={2}
-            display={{ base: 'none', md: 'inline-flex' }}
+            display={{ base: "none", md: "inline-flex" }}
             fontSize="sm"
             fontWeight={600}
             _hover={{ bg: "orange.400" }}
@@ -119,8 +120,8 @@ const Navbar = () => {
                 {link.linkName}
               </NavLink>
             ))}
-            <NavLink key='sign up' path='/registration'>
-                Sign Up
+            <NavLink key="sign up" path="/registration">
+              Sign Up
             </NavLink>
           </Stack>
         </Box>
