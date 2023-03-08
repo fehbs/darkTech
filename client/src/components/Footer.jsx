@@ -1,17 +1,23 @@
 import {
+  Box,
   Button,
   ButtonGroup,
   Container,
   Divider,
+  Flex,
+  Icon,
   IconButton,
   Input,
   Stack,
   Text,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { GiTechnoHeart } from 'react-icons/gi'
 
 const Footer = () => (
-  <Container as="footer" role="contentinfo">
+    <Box w='100%' bg={useColorModeValue('gray.100', 'gray.900')}>
+  <Container as="footer" role="contentinfo" maxW='7xl'>
     <Stack
       spacing="8"
       direction={{ base: "column", md: "row" }}
@@ -19,8 +25,20 @@ const Footer = () => (
       py={{ base: "12", md: "16" }}
     >
       <Stack spacing={{ base: "6", md: "8" }} align="start">
-        {/* <Logo /> */}
-        <Text color="muted">Create beautiful websites remarkably fast.</Text>
+        <Flex alignItems='center'>
+            <Icon 
+            as={GiTechnoHeart} 
+            h={10} 
+            w={10} 
+            color='orange.400'
+            />
+            <Text fontSize='2xl' fontWeight='extrabold'>
+                Dark Tech
+                </Text>
+        </Flex>
+        <Text color="muted">
+            We love technology.
+            </Text>
       </Stack>
       <Stack
         direction={{ base: "column-reverse", md: "column", lg: "row" }}
@@ -34,7 +52,6 @@ const Footer = () => (
             <Stack spacing="3" shouldWrapChildren>
               <Button variant="link">How it works</Button>
               <Button variant="link">Pricing</Button>
-              <Button variant="link">Use Cases</Button>
             </Stack>
           </Stack>
           <Stack spacing="4" minW="36" flex="1">
@@ -74,7 +91,7 @@ const Footer = () => (
       align="center"
     >
       <Text fontSize="sm" color="subtle">
-        &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights
+        &copy; {new Date().getFullYear()} Dark Tech, Inc. All rights
         reserved.
       </Text>
       <ButtonGroup variant="ghost">
@@ -99,6 +116,7 @@ const Footer = () => (
       </ButtonGroup>
     </Stack>
   </Container>
+  </Box>
 );
 
 export default Footer;
