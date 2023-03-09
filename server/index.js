@@ -3,6 +3,7 @@ import connectToDatabase from "./database.js";
 import express from "express";
 
 import productRoutes  from './routes/ProductRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 connectToDatabase();
@@ -13,6 +14,7 @@ app.use(express.json());
 const port = process.env.PORT || 9999;
 
 app.use('/api/products', productRoutes);
+app.use('/api/users', userRoutes);
 
 app.listen(port, () => {
     console.log(`THE SERVER IS RUNNING AT PORT => http://localhost:${port}`)
