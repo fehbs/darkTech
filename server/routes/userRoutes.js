@@ -20,6 +20,7 @@ const loginUser = asyncHandler(async (req, res) => {
       email: user.email,
       isAdmin: user.isAdmin,
       token: genToken(user._id),
+      createdAt: user.createdAt,
     });
   } else {
     res.status(401);
@@ -49,6 +50,7 @@ const registerUser = asyncHandler(async (req, res) => {
       email: user.email,
       isAdmin: user.isAdmin,
       token: genToken(user._id),
+      createdAt: user.createdAt,
     });
   } else {
     res.json(400);
